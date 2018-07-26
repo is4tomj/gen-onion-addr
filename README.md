@@ -15,9 +15,9 @@ $ gen-onion-addr --help
 ## Generating a v2 Onion Address
 
 1. Generate 1024-bit RSA key-pair comprising private/secret key, referred to as *SK*, and public key, referred to as *PK*.
-2. Encode *SK* into PKCS#1, ASN.1 DER form.
-3. Encode *PK* into PKCS#1, ASN.1 DER form.
-4. Generate the SHA1 hash of the *PK* in the PKCS#1, ASN.1 DER form.
+2. Encode *SK* into PKCS#1, [ASN.1 DER](https://cryptologie.net/article/262/what-are-x509-certificates-rfc-asn1-der/) format.
+3. Encode *PK* into PKCS#1, ASN.1 DER format.
+4. Generate the SHA1 hash of the *PK* in the PKCS#1, ASN.1 DER format.
 5. Encode the first 10 bytes of the SHA1 hash into a base32 string. The result will be 16 bytes in all caps.
 6. Lowercase the base32 string and append ".onion" to generate the v2 onion address.
 7. Store the v2 onion address in a file named `hostname`.
