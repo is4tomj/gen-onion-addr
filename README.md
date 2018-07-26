@@ -14,7 +14,7 @@ $ gen-onion-addr --help
 
 ## Generating a v2 Onion Address
 
-1. Generate 1024-bit RSA key-pair comprising private/secret key *SK* and public key *PK*.
+1. Generate 1024-bit RSA key-pair comprising private/secret key, referred to as *SK*, and public key, referred to as *PK*.
 2. Encode *SK* into PKCS#1, ASN.1 DER form.
 3. Encode *PK* into PKCS#1, ASN.1 DER form.
 4. Generate the SHA1 hash of the *PK* in the PKCS#1, ASN.1 DER form.
